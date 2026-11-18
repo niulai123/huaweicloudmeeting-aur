@@ -37,6 +37,12 @@ makepkg -si
 - 仅验证了 x86_64 与 GNOME Wayland；KDE 及其他桌面尚未测试。
 - 应用为华为的闭源客户端，许可证状态未知，本仓库仅做打包分发。
 
+## AUR
+
+上游 AUR 的 `huaweicloudmeeting-bin` 由他人维护，其 9.12.5 源地址已失效。
+本仓库的 PKGBUILD 使用同名 `pkgbase`，便于在原包转为 orphan 后接管；也可以
+改用 `huaweicloudmeeting-wayland-bin` 作为独立包名发布。
+
 ## 构建载荷
 
 `build-payload.sh` 可从本机玲珑安装的层目录重新生成 `app.asar` 载荷：
