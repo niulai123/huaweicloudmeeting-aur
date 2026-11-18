@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=华为云会议
+Name[en]=HuaWei Cloud Meeting
+Comment=HuaWei Cloud Meeting
+Comment[en]=HuaWei Cloud Meeting
+Exec=huaweicloudmeeting %U
+Terminal=false
+Type=Application
+Icon=huaweicloudmeeting
+StartupWMClass=华为云会议
+MimeType=x-scheme-handler/cloudlink;
+Categories=Network;VideoConference;

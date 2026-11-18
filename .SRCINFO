@@ -1,0 +1,21 @@
+pkgbase = huaweicloudmeeting-bin
+	pkgdesc = HuaWei Cloud Meeting, prebuilt, running on system Electron with Wayland screen sharing
+	pkgver = 9.12.5
+	pkgrel = 1
+	url = https://www.huaweicloud.com/product/meeting
+	arch = x86_64
+	license = LicenseRef-unknown
+	depends = electron39
+	provides = huaweicloudmeeting=9.12.5
+	conflicts = huaweicloudmeeting
+	conflicts = welink
+	conflicts = deepin-wine-welink
+	options = !strip
+	source = huaweicloudmeeting-bin-9.12.5-app.tar.zst::https://github.com/codingbme-ux/huaweicloudmeeting-aur/releases/download/v9.12.5/huaweicloudmeeting-bin-9.12.5-app.tar.zst
+	source = huaweicloudmeeting.sh
+	source = huaweicloudmeeting.desktop
+	sha256sums = af2dfcce4f61ce70df73c048977353c847ac58c0cc8f9ad43674888f25a916c9
+	sha256sums = c536218bf0f7ab7203cb2fc8e6f04e25884e989ac8fcad498afe9cd0c2931bd1
+	sha256sums = 64015bddefb84c438089e271cc30464d9d8f801b6c054557584fd90f8a3273d8
+
+pkgname = huaweicloudmeeting-bin
