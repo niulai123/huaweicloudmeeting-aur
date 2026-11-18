@@ -14,7 +14,7 @@ options=('!strip')
 source=("${pkgname}-${pkgver}-app.tar.zst::${_repo}/releases/download/v${pkgver}/${pkgname}-${pkgver}-app.tar.zst"
         'huaweicloudmeeting.sh'
         'huaweicloudmeeting.desktop')
-sha256sums=('af2dfcce4f61ce70df73c048977353c847ac58c0cc8f9ad43674888f25a916c9'
+sha256sums=('4ca5487b6b57113a56f032f08fc7663cbc85949e4fa9786c4e681cc6b90f6014'
             'c536218bf0f7ab7203cb2fc8e6f04e25884e989ac8fcad498afe9cd0c2931bd1'
             '64015bddefb84c438089e271cc30464d9d8f801b6c054557584fd90f8a3273d8')
 

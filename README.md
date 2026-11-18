@@ -12,7 +12,9 @@
 
 ## 修复
 
-- 应用文件取自星火玲珑商店的 9.12.5 构建（`huaweicloudmeeting.linyaps`）。
+- 应用文件直接取自华为 9.12.5 amd64 deb 的 `app.asar`，该 deb 由统信 UOS
+  应用商店分发，sha256 为 `60e15e2a…3982f1f`，与 AUR 旧 PKGBUILD 及玲珑
+  构建脚本中记录的校验值一致。
 - 运行时改用仓库中的 `electron39`，其 PipeWire 采集在 Wayland 下可用。
 - 启动脚本在 Wayland 会话下自动追加：
   `--enable-features=WebRTCPipeWireCapturer --ozone-platform=wayland`
@@ -45,9 +47,13 @@ makepkg -si
 
 ## 构建载荷
 
-`build-payload.sh` 可从本机玲珑安装的层目录重新生成 `app.asar` 载荷：
+`build-payload.sh` 从厂商 deb 重新生成载荷：
 
 ```sh
-ll-cli install huaweicloudmeeting.linyaps
 ./build-payload.sh
 ```
+
+来源链：华为（deb 的 `Vendor: huawei`）→ 统信 UOS 商店
+`pro-store-packages.uniontech.com` → 本仓库的 release 载荷。商店会重定向到
+CDN，且 CDN 要求浏览器 User-Agent 与 Referer，因此脚本里带了这两个头。仓库载荷
+中的 `app.asar`（sha256 `baa7bb0e…d684c367`）与 deb 内文件逐字节一致。
