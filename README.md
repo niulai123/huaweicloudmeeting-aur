@@ -22,7 +22,7 @@
 ## 安装
 
 ```sh
-git clone https://github.com/codingbme-ux/huaweicloudmeeting-aur.git
+git clone https://github.com/niulai123/huaweicloudmeeting-aur.git
 cd huaweicloudmeeting-aur
 makepkg -si
 ```

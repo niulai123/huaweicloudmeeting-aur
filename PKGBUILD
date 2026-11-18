@@ -1,4 +1,4 @@
-# Maintainer: codingbme-ux
+# Maintainer: niulai123
 pkgname=huaweicloudmeeting-bin
 pkgver=9.12.5
 pkgrel=1
@@ -9,7 +9,7 @@ license=('LicenseRef-unknown')
 provides=("${pkgname%-bin}=${pkgver}")
 conflicts=("${pkgname%-bin}" 'welink' 'deepin-wine-welink')
 depends=('electron39')
-_repo='https://github.com/codingbme-ux/huaweicloudmeeting-aur'
+_repo='https://github.com/niulai123/huaweicloudmeeting-aur'
 options=('!strip')
 source=("${pkgname}-${pkgver}-app.tar.zst::${_repo}/releases/download/v${pkgver}/${pkgname}-${pkgver}-app.tar.zst"
         'huaweicloudmeeting.sh'
